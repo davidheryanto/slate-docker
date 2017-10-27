@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -z $1 ]; then 
+	echo "\$1 is unset"
+	echo "Will run build"
+elif [ $1 = "dev" ]; then
+	echo "\$1 is equal to dev"
+	echo "Will live reload"
+else 
+	echo "Unknown argument '$1', will do nothing"
+	echo "Accepted optional argument: dev"
+fi
