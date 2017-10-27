@@ -9,7 +9,7 @@ The idea is to use this Docker image like an application. Running the docker ima
 ### Building the image
 
 ```
-docker build -t slate
+docker build -t slate .
 ```
 
 ### Developing the doc
