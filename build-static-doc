@@ -1,10 +1,12 @@
 #!/bin/bash
 
 if [ -z $1 ]; then 
-	echo "Building static html doc to 'build' folder ..."
-	bundle exec middleman build --clean
 	echo "Deleting old 'build' folder if exists ..."
 	rm -rf source/build
+	
+	echo "Building static html doc to 'build' folder ..."
+	bundle exec middleman build --clean
+	
 	echo "Copying result into 'build' folder ..."
 	cp -r build source/
 
